@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #
 #   In m1 we looked at classes that you have seen before. Those are built-in
 #   classes that are simply a part of Python.
@@ -17,7 +17,18 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class pet:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
+    def __str__(self):
+        x = (f"{self.name}({self.age})")
+        print(x)
+            
+p1 = pet("Rocky", 4)
+print(p1.name)
+print(p1.age)
 ###############################################################################
 # TODO: 2. (2 pts)
 #
