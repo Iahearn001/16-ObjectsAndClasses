@@ -17,20 +17,21 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-class pet:
+class Pet:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
     def __str__(self):
-        x = (f"{self.name}({self.age})")
-        print(x)
-            
-p1 = pet("Rocky", 4)
-print(p1.name)
-print(p1.age)
+        return f"Name: {self.name}, Age: {self.age}"
+
+    def speak(self):
+        print(f"{self.name}: Bark! Bark! Bark!")
+p1 = Pet("Fido", 4)
+print(p1)
+p1.speak()
 ###############################################################################
-# TODO: 2. (2 pts)
+# DONE: 2. (2 pts)
 #
 #   For this _todo_, modify the class above to include a __str__() method. If
 #   performed on a Pet object with these properties:
@@ -52,7 +53,7 @@ print(p1.age)
 ###############################################################################
 
 ###############################################################################
-# TODO: 3. (2 pts)
+# DONE: 3. (2 pts)
 #
 #   For this _todo_, modify the class in _todo_ 1 above to include a method
 #   called speak() that, if given the same object described in _todo_ 2, would
